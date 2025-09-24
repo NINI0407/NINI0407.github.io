@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh"><head>
+<title>啟動平台對戰 - 妮之上學日記</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="description" content="秉鈞學長程式 編譯指令Chinese_Dark_Chess_Program\alphabeta+parallel+endgame_database_tradinational 資料夾下 !1g++ -o parallel_sp2.9.9.2f_endgame.exe parallel_sp2.9.9.2f_endgame.cpp score.cpp -std&#x3D;c++11 -O3 放到平台中「AI路">
+<meta property="og:type" content="article">
+<meta property="og:title" content="啟動平台對戰">
+<meta property="og:url" content="http://example.com/2025/09/25/DarkChess/index.html">
+<meta property="og:site_name" content="妮之上學日記">
+<meta property="og:description" content="秉鈞學長程式 編譯指令Chinese_Dark_Chess_Program\alphabeta+parallel+endgame_database_tradinational 資料夾下 !1g++ -o parallel_sp2.9.9.2f_endgame.exe parallel_sp2.9.9.2f_endgame.cpp score.cpp -std&#x3D;c++11 -O3 放到平台中「AI路">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2025-09-24T20:33:49.000Z">
+<meta property="article:modified_time" content="2025-09-24T20:38:31.926Z">
+<meta property="article:author" content="ShinNi Lu">
+<meta property="article:tag" content="♘">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.css">
+<link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
+
+
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1758746392713">
+
+<link rel="stylesheet" href="/css/style.css?v=1758746392713">
+
+
+
+
+    
+        <link rel="stylesheet" href="/custom.css?v=1758746392713">
+    
+
+
+
+<script src="/lib/mdui_043tiny/mdui.js" async></script>
+<script src="/lib/fancybox/fancybox.umd.js" async></script>
+<script src="/lib/lax.min.js" async></script>
+
+
+<script async src="/js/app.js?v=1758746392713"></script>
+
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4D4ZJ9G024"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-4D4ZJ9G024");
+</script>
+
+
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+
+
+<meta name="generator" content="Hexo 7.3.0"></head><body class="nexmoe mdui-drawer-body-left"><div id="nexmoe-background"><div class="nexmoe-bg" style="background-image: url(https://i.imgur.com/wXCFuNG.jpg)"></div><div class="mdui-appbar mdui-shadow-0"><div class="mdui-toolbar"><a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: &#039;#drawer&#039;, swipe: true}" title="menu"><i class="mdui-icon nexmoefont icon-menu"></i></a><div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon" href="/" title="ShinNi Lu"><img src="https://i.imgur.com/BfFSZvN.jpg" alt="ShinNi Lu"></a></div></div></div><div id="nexmoe-header"><div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="ShinNi Lu">
+            <img src="https://i.imgur.com/BfFSZvN.jpg" alt="ShinNi Lu" alt="ShinNi Lu">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>10</div>
+        <div><span>標籤</span>3</div>
+        <div><span>分類</span>2</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首頁">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首頁
+            </div>
+        </a>
+        
+    </div>
+    
+    
+        
+        <div class="nexmoe-widget-wrap">
+	<div class="nexmoe-widget nexmoe-social">
+		<a
+			class="mdui-ripple"
+			href="https://github.com/"
+			target="_blank"
+			mdui-tooltip="{content: 'GitHub'}"
+			style="
+				color: rgb(25, 23, 23);
+				background-color: rgba(25, 23, 23, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-github"
+			></i> </a
+		>
+	</div>
+</div>
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章分類</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/CPE/">CPE</a>
+          <span class="category-list-count">8</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/DarkChess/">DarkChess</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/%E2%99%98/" style="font-size: 10px;">♘</a> <a href="/tags/%E2%AD%90/" style="font-size: 20px;">⭐</a> <a href="/tags/%E2%AD%90%E2%AD%90/" style="font-size: 15px;">⭐⭐</a>
+    </div>
+    
+      <script>
+        var maxTagcloud = parseInt(17);
+        var tags_length = parseInt(3);
+        var tags_arr = [];
+        for(var i = 0; i < tags_length; i++){
+          tags_arr.push(i);
+        }
+        tags_arr.sort(function (l, r) {
+          return Math.random() > 0.5 ? -1 : 1;
+        });
+        tags_arr = tags_arr.slice(0, maxTagcloud < tags_length ? tags_length - maxTagcloud : 0);
+        for(var tag_i = 0; tag_i < tags_arr.length; tag_i++){
+          document.getElementById("randomtagcloud").children[tags_arr[tag_i]].style.display = 'none';
+        }
+      </script>
+    
+  </div>
+
+    
+        
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">所有文章</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/">2025</a><span class="archive-list-count">10</span></li></ul>
+    </div>
+  </div>
+
+
+
+    
+   
+    <div class="nexmoe-copyright">
+        &copy; 2025 ShinNi Lu
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        # <br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"></a>
+
+    </div>
+</div><!-- .nexmoe-drawer --></div><div id="nexmoe-content"><div class="nexmoe-primary"><div class="nexmoe-post">
+  <article>
+    
+        <div class="nexmoe-post-cover"> 
+            <img src="https://i.imgur.com/wXCFuNG.jpg" alt="啟動平台對戰" loading="lazy">
+            <h1>啟動平台對戰</h1>
+        </div>
+    
+    
+    <div class="nexmoe-post-meta">
+    <div class="nexmoe-rainbow">
+        <a class="nexmoefont icon-calendar-fill">2025年09月25日</a>
+        
+            <a class="nexmoefont icon-appstore-fill -link" href="/categories/DarkChess/">DarkChess</a>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+    <h3 id="秉鈞學長程式"><a href="#秉鈞學長程式" class="headerlink" title="秉鈞學長程式"></a>秉鈞學長程式</h3><ol>
+<li>編譯指令<br>Chinese_Dark_Chess_Program\alphabeta+parallel+endgame_database_tradinational 資料夾下 <figure class="highlight bash"><figcaption><span>!</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g++ -o parallel_sp2.9.9.2f_endgame.exe parallel_sp2.9.9.2f_endgame.cpp score.cpp -std=c++11 -O3</span><br></pre></td></tr></table></figure></li>
+<li>放到平台中「AI路徑」欄位中就可以用來跟別人對戰了</li>
+</ol>
+<p>ps 這支程式目前只能在windows上面執行，在linux環境中即使重新編譯也會有找不到move.txt的問題</p>
+<h3 id="minizero"><a href="#minizero" class="headerlink" title="minizero"></a>minizero</h3><ol>
+<li><p><code>bash scripts/start-container.sh</code>會啟動容器<br> :::spoiler 錯誤與解決<br> <strong>error：</strong><br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">podman run  --cap-add=SYS_PTRACE --security-opt seccomp=unconfined --network=host --ipc=host --rm --device nvidia.com/gpu=all -it -v .:/workspace kds285/minizero:latest</span><br><span class="line">Error: crun: cannot stat `/usr/lib/x86_64-linux-gnu/libEGL_nvidia.so.550.90.07`: No such file or directory: OCI runtime attempted to invoke a command that was not found</span><br></pre></td></tr></table></figure><br> <strong>說明：</strong><br> 容器執行時想要使用 NVIDIA GPU 的 EGL 驅動檔 (libEGL_nvidia.so.550.90.07)，但是在 host 系統中找不到這個檔案，所以 container 無法啟動 GPU 加速的功能。<br> 原因可能有：<br> Host 上的 NVIDIA 驅動版本不對，沒有安裝這個版本的         libEGL_nvidia.so<br> NVIDIA Container Toolkit 沒有正確安裝或配置<br> 使用 podman 而不是 docker，有些驅動掛載方式或路徑不同<br> <strong>解決：</strong><br> 把 <code>scripts/start-container.sh</code> 中容器工具偵測改成docker為預設(19行)，再把啟動容器的指令改成依照容器工具選擇gpu參數語法(62-63行 改成67-79行)</p>
+</li>
+<li><p>進入容器後執行<code>bash run-platform-eval.sh</code><br>啟動容器後在容器中直接跑 run-platform-eval.sh 會開兩個 tmux 視窗對戰<br> :::spoiler 出現 <code>run-platform-eval.sh: line 4: tmux: command not found</code> 錯誤<br> 執行 <code>apt update</code> 、 <code>apt install tmux</code>在容器中重新下載即可</p>
+</li>
+</ol>
+<h3 id="LightZero"><a href="#LightZero" class="headerlink" title="LightZero"></a>LightZero</h3><p>::: spoiler ModuleNotFoundError<br><strong>錯誤：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ModuleNotFoundError: No module named <span class="string">&#x27;torch&#x27;</span></span><br><span class="line">ModuleNotFoundError: No module named <span class="string">&#x27;easydict&#x27;</span></span><br><span class="line">ModuleNotFoundError: No module named <span class="string">&#x27;lzero&#x27;</span></span><br></pre></td></tr></table></figure>
+<p><strong>說明</strong><br>這個問題的原因是因為我在執行mgtp.py時用的python是虛擬環境(conda)的，但環境中沒有安裝這些模組，只要在環境中重新安裝即可(最好不要直接安裝在系統要裝在虛擬環境中才不會衝突)<br><strong>解決：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip install torch</span><br><span class="line">python3 -m pip install easydict</span><br><span class="line">pip install -e .</span><br></pre></td></tr></table></figure>
+<p>:::</p>
+<p>::: spoiler 無法解析匯入 “(套件名稱)”<br>如果在import 時出現無法解析匯入，可以檢查VScode右下角的python解析器用的是不是對的(套件所在位置和python的位置一樣)<br>:::</p>
+<p>::: spoiler try and errorrrrrrrrrrrrrrrrrr<br><strong>錯誤</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;/home/ntcucsk201/DarkChess/LightZero/zoo/board_games/darkchess/mgtp.py&quot;, line 21, in &lt;module&gt;</span><br><span class="line">    model = StochasticMuZeroModel(main_config.policy.model)</span><br><span class="line">  File &quot;/home/ntcucsk201/DarkChess/LightZero/lzero/model/stochastic_muzero_model.py&quot;, line 107, in __init__</span><br><span class="line">    (reward_head_channels * observation_shape[1] * observation_shape[2])</span><br></pre></td></tr></table></figure>
+<p><strong>說明</strong><br>這個錯誤是因為在初始化StochasticMuZeroModel的時候，模型要計算reward head，但遇到observation_shape格式有問題的error<br><strong>解決</strong></p>
+<p>:::</p>
+<p>:::info<br>若要更換模型要修改 open&#x2F;enter 的 config 檔案中路徑和啟動參數，minizero、lightzero 都要透過 mgtp.py 檔與平台對接</p>
+<p>ps 3depth、mgtp(這兩個是平台隨機下棋的版本)<br>ps 如果要設定python路徑要注意是用系統的還是虛擬環境(conda)的</p>
+<p>:::<br>::: spoiler MiniZero vs LightZero與平台對接的邏輯<br><strong>MinniZero</strong><br>第一步啟動的容器裡面會包含model需要的policy等環境，所以mgtp.py檔只要引入模型，協助把模型及平台的輸出互相對接(MGTP模式)即可</p>
+<p><strong>LightZero</strong><br>官方沒有給設定好的環境啟動方式，所以mgtp.py檔裡面要包含(1)policy(走步決策)和模型等產生走步的必要環境(也就是MiniZero容器中有的那些東西)，(2)模型及平台的輸出互相對接(MGTP模式)<br>:::</p>
+
+    <!-- <p><img src="https://i.dawnlab.me/53a8c7cf3ad77a0f0a456ce2c6afe88a.png" loading="lazy"></p> -->
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>本文作者：</strong>ShinNi Lu<br>
+        <strong>本文連結：</strong><a href="http://example.com/2025/09/25/DarkChess/" title="http:&#x2F;&#x2F;example.com&#x2F;2025&#x2F;09&#x2F;25&#x2F;DarkChess&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;example.com&#x2F;2025&#x2F;09&#x2F;25&#x2F;DarkChess&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 
+
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+   
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E2%99%98/" rel="tag">♘</a>
+    
+</div>
+  
+  
+    <script async src="/js/copy-codeblock.js?v=1758746392692"></script>
+  
+
+  
+      <div class="nexmoe-post-footer">
+          请在你的配置文件中设置 slotComment
+
+      </div>
+  
+</div></div><div class="nexmoe-post-right">    <div class="nexmoe-fixed">
+        <div class="nexmoe-tool">
+
+            
+
+            
+            
+            <button class="mdui-fab catalog" style="overflow:unset;">
+                <i class="nexmoefont icon-i-catalog"></i>
+                <div class="nexmoe-toc">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%89%E9%88%9E%E5%AD%B8%E9%95%B7%E7%A8%8B%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">秉鈞學長程式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#minizero"><span class="toc-number">2.</span> <span class="toc-text">minizero</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LightZero"><span class="toc-number">3.</span> <span class="toc-text">LightZero</span></a></li></ol>
+                </div>
+            </button>
+            
+
+            
+
+            <a href="#nexmoe-content" class="backtop toc-link" aria-label="Back To Top" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+        </div>
+    </div>
+</div></div><div id="nexmoe-footer"><!--!--></div><div id="nexmoe-search-space"><div class="search-container"><div class="search-header"><div class="search-input-container"><input class="search-input" type="text" placeholder="搜尋" onInput="sinput();"></div><a class="search-close" onclick="sclose();">×</a></div><div class="search-body"></div></div></div><div># <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2058306854838448" crossorigin="anonymous"></script>
+</div></body></html>
